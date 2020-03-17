@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-class X < Sinatra::Base
+class Airbnb < Sinatra::Base
 
 run! if app_file == $0
 end
