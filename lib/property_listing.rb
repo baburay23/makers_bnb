@@ -12,6 +12,6 @@ class Property
       end
 
     result = connection.exec('SELECT * FROM property_listing')
-    result.map { |property_listing| property_listing['pl_name'], property_listing['pl_description'], property_listing['pl_price_night'] }
+    #result.map { |property_listing| property_listing['pl_name'], property_listing['pl_description'], property_listing['pl_price_night'] }
   end
 end
