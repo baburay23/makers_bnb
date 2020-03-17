@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/features/sign_up_spec.rb": {
+      "/Users/student/projects/fya_hr/spec/features/log_in_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,16 +9,32 @@
           1,
           1,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/student/projects/fya_hr/spec/features/sign_up_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1584444569
+    "timestamp": 1584446722
   }
 }

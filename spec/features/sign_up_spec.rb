@@ -7,6 +7,7 @@ feature 'User should sign up' do
     fill_in('last_name', with: 'babur')
     fill_in('email', with: 'ayshababur@hotmail.com')
     fill_in('password', with: 'seaside')
+    fill_in('confirm_password', with: 'seaside')
     click_button('sign up')
     expect(page).to have_button('log in')
   end
