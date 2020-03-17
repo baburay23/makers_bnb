@@ -11,11 +11,11 @@ class Property
     if ENV['ENVIRONMENT'] == 'test'
         connection = PG.connect(dbname: 'fya_hr_test')
       else
-        connection = PG.connect(dbname: 'fya_hr')
+        connection = PG.connect(dbname: "fya_hr")
       end
 
-    result = connection.exec('SELECT * FROM property_listing')
-    result.map do |prop|
+    result = connection.exec('SELECT * FROM property_listing;')
+     result.map do |prop|
       Property.new(prop['pl_id'], prop['pl_name'], prop['pl_description'], prop['pl_price_night'])
     end
   end

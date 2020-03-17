@@ -1,10 +1,10 @@
 require 'sinatra/base'
 require './lib/property_listing'
-
+require 'pg'
 
 class Fya_hrbnb < Sinatra::Base
 
-  get '/' do
+  get '/home' do
     @properties = Property.display_all
     erb :index
   end
