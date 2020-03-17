@@ -5,8 +5,7 @@ require './lib/property_listing'
 class Fya_hrbnb < Sinatra::Base
 
   get '/' do
-    property_list = Property.new
-    @properties = property_list.display_all
+    @properties = Property.display_all
     erb :index
   end
 
