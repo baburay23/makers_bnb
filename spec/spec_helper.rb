@@ -1,10 +1,14 @@
 # Require all the testing gems
+
+ENV['RACK_ENV'] = 'test'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 
 require 'simplecov'
 require 'simplecov-console'
+require File.join(File.dirname(__FILE__), '..', 'app.rb')
+Capybara.app = Fya_hr
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
@@ -31,7 +35,8 @@ SimpleCov.start
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-require File.join(File.dirname(__FILE__), '..', 'app.rb')
+
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
