@@ -1,7 +1,38 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/hodan/projects/makers_bnb/spec/features/homepage_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/hodan/projects/makers_bnb/spec/property_listing_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
     },
-    "timestamp": 1584444706
+    "timestamp": 1584447606
   }
 }
