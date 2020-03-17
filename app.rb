@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require './lib/property_listing'
-
+require './lib/Fya_hr'
 
 class Fya_hrbnb < Sinatra::Base
 
@@ -15,9 +15,11 @@ get '/sign_up' do
 end
 
 post '/sign_up' do
-	#send user info to database
+  Fya_hr.create(first_name: params[:first_name], last_name: params[:last_name], email_address: params[:email_address], password: params[:password])
+#send user info to database
 	redirect '/login'
 end
+
 
 get '/login' do
 	erb :login
