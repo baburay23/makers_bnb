@@ -2,7 +2,8 @@ require 'pg'
 
 def setup_test_database
   connection = PG.connect(dbname: 'fya_hr_test')
-  connection.exec("TRUNCATE property_listing;")
+  connection.exec("TRUNCATE TABLE property_listing;")
+  connection.exec("TRUNCATE TABLE users;")
 end
 
 def add_row_to_test_database

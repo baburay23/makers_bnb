@@ -1,11 +1,16 @@
 require 'pg'
+require 'test_helper'
 
-feature 'User should log in' do
-	scenario 'User can log in' do
-		visit('/login')
-    fill_in('email_address', with: 'ayshababur@hotmail.com')
-    fill_in('password', with: 'seaside')
-    click_button('log in')
-    expect(page.has_css?("ul")).to eq true
+feature 'Verify user' do
+	scenario 'User does not exsist' do
+		login('sasquatch@hotmail.com', 'farts')
+    expect(page).to have_content 'This user does not exsist please sign up.'
    end
+
+	scenario 'User password is incorrect' do
+	 sign_up('aysha', 'babur', 'ayshababur@hotmail', 'seaside')
+   login('ayshababur@hotmail.com', 'mountains')
+	 expect(page).to have_content 'Your password is incorrect.'
+	 end
+
  end
