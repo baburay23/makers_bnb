@@ -1,26 +1,26 @@
+require 'pg'
+
 class User
-  attr_reader :first_name, :last_name, :email_address, :password
+  attr_reader :first_name, :last_name, :email_address, :password, :id
 
-def initialize (first_name:, last_name:, email_address:, password:)
-  @first_name = first_name
-  @last_name = last_name
-  @email_address = email_address
-  @password = password
-end
+  def initialize (first_name:, last_name:, email_address:, password:, id: )
+    @first_name = first_name
+    @last_name = last_name
+    @email_address = email_address
+    @password = password
+    @id = id
+  end
 
-def self.create(first_name:, last_name:, email_address:, password:)
-  if ENV['ENVIRONMENT'] == 'test'
-      connection = PG.connect(dbname: 'fya_hr_test')
+  def self.create(first_name:, last_name:, email_address:, password:)
+    if ENV['ENVIRONMENT'] == 'test'
+        connection = PG.connect(dbname: 'fya_hr_test')
     else
       connection = PG.connect(dbname: 'fya_hr')
     end
-  result = connection.exec("INSERT INTO users (first_name, last_name, email_address, password) VALUES('#{first_name}', '#{last_name}', '#{email_address}','#{password}')")
-  #User.new()
- end
+    result = connection.exec("INSERT INTO users (first_name, last_name, email_address, password)
+     VALUES('#{first_name}', '#{last_name}', '#{email_address}','#{password}') 
+     RETURNING id, first_name, last_name, email_address, password;")
 
-
-#do this next
-
-   #Bookmark.new(id: result[0]['id'], title: result[0]['title'],url: result[0]['url'])
-
+    User.new(id: result[0]['id'], first_name: result[0]['first_name'], last_name: result[0]['last_name'], email_address: result[0]['email_address'], password: result[0]['password'])
+   end
 end
