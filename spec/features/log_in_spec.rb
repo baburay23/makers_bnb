@@ -13,4 +13,10 @@ feature 'Verify user' do
 	 expect(page).to have_content 'Your password is incorrect.'
 	 end
 
+	 scenario 'User is verfied' do
+	 	sign_up('aysha', 'babur', 'ayshababur@hotmail', 'seaside')
+		login('ayshababur@hotmail.com', 'seaside')
+	  expect(page.has_css?("ul")).to eq true
+	 end
+
  end

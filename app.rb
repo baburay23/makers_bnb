@@ -22,11 +22,18 @@ end
 
 
 get '/login' do
+
 	erb :login
 end
 
 post '/login' do
-	redirect '/'
+ @result = User.verify(email_address: params[:email_address], password: params[:password])
+ p @result
+  if @result == true
+    redirect '/'
+  else
+   erb :login
+ end
 end
 
 
