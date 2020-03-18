@@ -37,8 +37,10 @@ end
 
 post '/login' do
  @result = User.verify(email_address: params[:email_address], password: params[:password])
- p @result
-  if @result == true
+
+ p @result.class
+  if @result.class != String
+
     redirect '/home'
   else
    erb :login

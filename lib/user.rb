@@ -35,7 +35,7 @@ class User
  elsif result["password"] != password
    return "Your password is incorrect."
  else
-   return true
+  User.new(id: result['id'], first_name: result['first_name'], last_name: ['last_name'], email_address: result['email_address'], password: result['password'])
   end
  end
 end
