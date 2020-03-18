@@ -5,6 +5,7 @@ require 'pg'
 
 
 class Fya_hrbnb < Sinatra::Base
+  enable :sessions
 
   get '/test' do
     erb :test
@@ -16,6 +17,8 @@ class Fya_hrbnb < Sinatra::Base
 
   get '/home' do
     @properties = Property.display_all
+    @first_name = session[:first_name]
+    @last_name = session[:last_name]
     erb :index
   end
 
@@ -38,9 +41,9 @@ end
 post '/login' do
  @result = User.verify(email_address: params[:email_address], password: params[:password])
 
- p @result.class
   if @result.class != String
-
+    session[:first_name] = @result.first_name
+    session[:last_name] = @result.last_name
     redirect '/home'
   else
    erb :login
