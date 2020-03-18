@@ -4,6 +4,14 @@ require 'pg'
 
 class Fya_hrbnb < Sinatra::Base
 
+  get '/test' do
+    erb :test
+  end
+
+  get '/notices'do
+    erb :notices
+  end
+
   get '/home' do
     @properties = Property.display_all
     erb :index
