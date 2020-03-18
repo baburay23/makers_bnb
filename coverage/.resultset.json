@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/features/homepage_spec.rb": {
+=======
+      "/Users/hodan/projects/makers_bnb/spec/features/homepage_spec.rb": {
+>>>>>>> f2a242632be6ed882547d340b1c6064f6946bf36
         "lines": [
           1,
           null,
@@ -10,6 +14,7 @@
           1,
           1,
           1,
+<<<<<<< HEAD
           null,
           null,
           null
@@ -30,6 +35,9 @@
           1,
           1,
           1,
+=======
+          1,
+>>>>>>> f2a242632be6ed882547d340b1c6064f6946bf36
           null,
           null,
           1,
@@ -61,6 +69,7 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/features/sign_up_spec.rb": {
         "lines": [
           1,
@@ -75,13 +84,14 @@
         ]
       },
       "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/property_listing_spec.rb": {
+=======
+      "/Users/hodan/projects/makers_bnb/spec/features/log_in_spec.rb": {
+>>>>>>> f2a242632be6ed882547d340b1c6064f6946bf36
         "lines": [
           1,
-          1,
-          null,
           null,
           1,
-          2,
+          1,
           1,
           1,
           1,
@@ -91,11 +101,41 @@
           null
         ]
       },
+      "/Users/hodan/projects/makers_bnb/spec/features/sign_up_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+<<<<<<< HEAD
+          2,
+=======
+          1,
+          1,
+          1,
+          1,
+>>>>>>> f2a242632be6ed882547d340b1c6064f6946bf36
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+<<<<<<< HEAD
       "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/user_spec.rb": {
         "lines": [
           1,
           1,
           1,
+=======
+      "/Users/hodan/projects/makers_bnb/spec/property_listing_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+>>>>>>> f2a242632be6ed882547d340b1c6064f6946bf36
           null,
           1,
           1,
@@ -104,9 +144,16 @@
           null,
           1,
           1,
+<<<<<<< HEAD
+=======
+          null,
+          1,
+>>>>>>> f2a242632be6ed882547d340b1c6064f6946bf36
           1,
           1,
           1,
+          null,
+          null,
           1,
           null,
           null
@@ -124,6 +171,10 @@
         ]
       }
     },
+<<<<<<< HEAD
     "timestamp": 1584533332
+=======
+    "timestamp": 1584464361
+>>>>>>> f2a242632be6ed882547d340b1c6064f6946bf36
   }
 }

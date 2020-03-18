@@ -1,5 +1,121 @@
+<!DOCTYPE html>
+<html
+<head>
+  <link href="/style.css">
+	<title> 🔥FYA_HR🔥 </title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+	<header>
+		<h1 class="title"> 🔥FYA_HR🔥 </h1>
+	</header>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700italic');
+
+  body{
+    font-family: 'Opens Sans', sans-serif;
+    padding: 20px 50px 150px;
+    text-align: center;
+    background: #DEFCC3;
+  }
+
+  a {
+    color: black;
+  }
+
+
+  .title{
+    font-size: 19px
+  }
+
+  .main_menu_design{
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .individual_menu_items{
+    font: 12px/18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: -4px;
+    padding: 15px 20px;
+    background: #fff;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .dropdown_design{
+    padding: 0;
+    position: absolute;
+    top: 75px;
+    margin-left: -20px;
+    width: 150px;
+    box-shadow: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: none;
+  }
+
+  .dropdown_design{
+    padding: 0;
+    position: absolute;
+    top: 75px;
+    margin-left: -20px;
+    width: 150px;
+    box-shadow: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: none;
+  }
+
+  .dropdown_list{
+    background: #555;
+    display: block;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+    cursor: pointer;
+  }
+
+  .dropdown_list:hover{
+    background: #000000;
+  }
+
+  /* changed ul li:hover ul to .individual_menu_items:hover */
+
+  .individual_menu_items:hover ul{
+   /* this reveals the dropdown menu on hover */
+   display: block;
+   opacity: 1;
+  }
+  </style>
+<body>
+
+<!-- let's start with a basic navigation menu made from an unordered list -->
+
+<ul class="main_menu_design">
+	<a href="/home"><li class="individual_menu_items">Home</li></a>
+	<a href="/notices"><li class="individual_menu_items">Notifications</li></a>
+	<li class="individual_menu_items">Properties
+	<!-- here we're going to next a list inside of a list. this nested list will be the dropdown menu. make sure the nested list is inside the <li> tags -->
+	 <ul class="dropdown_design">
+			<a href="/reserve">	<li class="dropdown_list">Reserve</li></a>
+			<a href="/post"><li class="dropdown_list">Post</li></a>
+		</ul>
+	</li>
+	 <a href="/sign_up"><li class="individual_menu_items">Sign Up</li></a>
+	<a href="/login"><li class="individual_menu_items">Login</li></a>
+</ul>
+</body>
+<div>
 <ul>
-  <% @properties.each do |property| %>
-    <li><%= property %></li>
+  <%@properties.each do |property| %>
+    <li><%= property.pl_name %>
+      <%= property.pl_description %>
+      £<%= property.pl_price_night %>
+    </li>
   <% end %>
 </ul>
+</div>
