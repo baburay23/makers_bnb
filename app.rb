@@ -50,6 +50,11 @@ post '/login' do
  end
 end
 
+get '/list_space' do
+  erb :list_space
+end
+
+
 
 run! if app_file == $0
 end
