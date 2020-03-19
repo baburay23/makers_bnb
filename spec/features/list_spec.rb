@@ -25,6 +25,6 @@ feature 'Listing' do
     login("email_address","password")
     click_link 'Post'
     list_new_space
-    expect(page).to have_xpath '/home'
+    expect(page).to have_content 'Requests'
   end
 end

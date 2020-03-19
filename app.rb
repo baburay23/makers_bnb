@@ -51,18 +51,18 @@ post '/login' do
  end
 end
 
-get '/list_space' do
-  erb :list_space
-end
-
 post '/list_space' do
   @first_name = params[:first_name]
   @last_name = params[:last_name]
   @description = params[:description]
   @price_per_night = params[:price_per_night]
   @id = session[:id]
-  redirect '/requests'
   Reservation.add(id: @id,description: @description,price_per_night: @price_per_night)
+  redirect '/requests'
+end
+
+get '/list_space' do
+  erb :list_space
 end
 
 get '/reserve' do

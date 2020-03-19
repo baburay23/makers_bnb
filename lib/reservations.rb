@@ -15,9 +15,9 @@ class Reservation
       connection = PG.connect(dbname: 'fya_hr')
     end
 
-    result = connection.exec("INSERT INTO reservations (id, description, t_price)
+    result = connection.exec("INSERT INTO reservations (owner_id, description, t_price)
      VALUES('#{id}', '#{description}', '#{price_per_night}')
-     RETURNING id, description, t_price;")
+     RETURNING owner_id, description, t_price;")
 
     Reservation.new(result[0]['id'],result[0]['description'], result[0]['t_price'])
   end

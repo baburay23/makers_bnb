@@ -7,7 +7,8 @@ describe 'Reservation' do
     expect(reservation).to be_a Reservation
   end
 
-  xit 'can use the add method' do
-    expect(Reservation.add(id: "33",description: "description",price_per_night: 400)).to eq ("this should work")
+  it 'can use the add method' do
+    reservation = Reservation.add(id: 33,description: "description",price_per_night: 400)
+    expect(reservation).to be_a Reservation
   end
 end
