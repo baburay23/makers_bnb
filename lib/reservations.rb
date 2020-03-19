@@ -1,24 +1,24 @@
 require 'pg'
 
 class Reservation
-  def initialize(id,description,price_per_night)
-    @r_status = "available"
+  def initialize(id,description,total_price)
     @id = id
     @description = description
-    @price_per_night = price_per_night
+    @total_price = total_price
   end
 
-  def self.add(id:,description:,price_per_night:)
+  def self.add(id:,description:,total_price:)
+    r_status = "available"
     if ENV['ENVIRONMENT'] == 'test'
         connection = PG.connect(dbname: 'fya_hr_test')
     else
       connection = PG.connect(dbname: 'fya_hr')
     end
 
-    result = connection.exec("INSERT INTO reservations (owner_id, description, t_price)
-     VALUES('#{id}', '#{description}', '#{price_per_night}')
-     RETURNING owner_id, description, t_price;")
+    result = connection.exec("INSERT INTO reservations (r_status, owner_id, description, total_price)
+     VALUES('#{r_status}','#{id}', '#{description}', '#{total_price}')
+     RETURNING owner_id, description, total_price;")
 
-    Reservation.new(result[0]['id'],result[0]['description'], result[0]['t_price'])
+    Reservation.new(result[0]['id'],result[0]['description'], result[0]['total_price'])
   end
 end

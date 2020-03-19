@@ -8,7 +8,7 @@ feature 'Listing' do
   expect(page.has_css?("input[name= 'first_name']")).to eq true
   expect(page.has_css?("input[name= 'last_name']")).to eq true
   expect(page.has_css?("input[name='description']")).to eq true
-  expect(page.has_css?("input[name='price_per_night']")).to eq true
+  expect(page.has_css?("input[name='total_price']")).to eq true
   expect(page.has_css?("input[name= 'available_from']")).to eq true
   expect(page.has_css?("input[name= 'available_to']")).to eq true
   end

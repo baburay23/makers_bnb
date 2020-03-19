@@ -55,9 +55,9 @@ post '/list_space' do
   @first_name = params[:first_name]
   @last_name = params[:last_name]
   @description = params[:description]
-  @price_per_night = params[:price_per_night]
+  @total_price = params[:total_price]
   @id = session[:id]
-  Reservation.add(id: @id,description: @description,price_per_night: @price_per_night)
+  Reservation.add(id: @id,description: @description, total_price: @total_price)
   redirect '/requests'
 end
 

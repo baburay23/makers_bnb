@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/hodan/projects/makers_bnb/spec/features/homepage_spec.rb": {
+      "/Users/student/projects/fya_hr/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           null,
@@ -14,7 +14,7 @@
           null
         ]
       },
-      "/Users/hodan/projects/makers_bnb/spec/features/list_spec.rb": {
+      "/Users/student/projects/fya_hr/spec/features/list_spec.rb": {
         "lines": [
           null,
           1,
@@ -48,7 +48,7 @@
           null
         ]
       },
-      "/Users/hodan/projects/makers_bnb/spec/features/log_in_spec.rb": {
+      "/Users/student/projects/fya_hr/spec/features/log_in_spec.rb": {
         "lines": [
           1,
           1,
@@ -74,7 +74,7 @@
           null
         ]
       },
-      "/Users/hodan/projects/makers_bnb/spec/test_helper.rb": {
+      "/Users/student/projects/fya_hr/spec/test_helper.rb": {
         "lines": [
           1,
           6,
@@ -102,7 +102,7 @@
           null
         ]
       },
-      "/Users/hodan/projects/makers_bnb/spec/features/sign_up_spec.rb": {
+      "/Users/student/projects/fya_hr/spec/features/sign_up_spec.rb": {
         "lines": [
           1,
           1,
@@ -115,7 +115,7 @@
           null
         ]
       },
-      "/Users/hodan/projects/makers_bnb/spec/property_listing_spec.rb": {
+      "/Users/student/projects/fya_hr/spec/property_listing_spec.rb": {
         "lines": [
           1,
           1,
@@ -139,7 +139,7 @@
           null
         ]
       },
-      "/Users/hodan/projects/makers_bnb/spec/reservations_spec.rb": {
+      "/Users/student/projects/fya_hr/spec/reservations_spec.rb": {
         "lines": [
           1,
           1,
@@ -157,7 +157,7 @@
           null
         ]
       },
-      "/Users/hodan/projects/makers_bnb/spec/user_spec.rb": {
+      "/Users/student/projects/fya_hr/spec/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -178,7 +178,7 @@
           null
         ]
       },
-      "/Users/hodan/projects/makers_bnb/spec/database_helper.rb": {
+      "/Users/student/projects/fya_hr/spec/database_helper.rb": {
         "lines": [
           1,
           null,
@@ -190,6 +190,6 @@
         ]
       }
     },
-    "timestamp": 1584620702
+    "timestamp": 1584622086
   }
 }

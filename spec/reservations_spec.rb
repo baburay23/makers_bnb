@@ -8,7 +8,7 @@ describe 'Reservation' do
   end
 
   it 'can use the add method' do
-    reservation = Reservation.add(id: 33,description: "description",price_per_night: 400)
+    reservation = Reservation.add(id: 33,description: "description",total_price: 400)
     expect(reservation).to be_a Reservation
   end
 end
