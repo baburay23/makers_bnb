@@ -1,120 +1,53 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/features/homepage_spec.rb": {
+      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/reserve_spec.rb": {
         "lines": [
           1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
           1,
           1,
           1,
-          1,
-          null,
+          0,
           null,
           null
         ]
       },
-      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/features/log_in_spec.rb": {
+      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/lib/reserve.rb": {
         "lines": [
           1,
+          null,
+          1,
           1,
           null,
           1,
           1,
-          1,
-          1,
-          null,
-          null,
           1,
           1,
           1,
           1,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/test_helper.rb": {
-        "lines": [
-          1,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null
-        ]
-      },
-      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/features/sign_up_spec.rb": {
-        "lines": [
-          1,
-          1,
           null,
           1,
           1,
           1,
-          1,
           null,
-          null
-        ]
-      },
-      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/property_listing_spec.rb": {
-        "lines": [
-          1,
+          0,
+          null,
           1,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
           null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/ayshababur/Desktop/makers/makers_bnb/makers_bnb/spec/user_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           null,
           null
@@ -125,6 +58,12 @@
           1,
           null,
           1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -132,6 +71,6 @@
         ]
       }
     },
-    "timestamp": 1584540929
+    "timestamp": 1584621109
   }
 }

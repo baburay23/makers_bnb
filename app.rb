@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './lib/property_listing'
 require './lib/user'
+require './lib/reserve.rb'
 require 'pg'
 
 
@@ -10,7 +11,17 @@ class Fya_hrbnb < Sinatra::Base
     erb :test
   end
 
+  get '/reserve' do
+    erb :reserve
+  end
+
+  post '/reserve' do
+  Reserve.request(check_in_date: params[:check_in_date], check_out_date: params[:check_out_date], r_duration: params[:r_duration])
+  erb :reserve
+  end
+
   get '/notices'do
+
     erb :notices
   end
 
@@ -43,8 +54,7 @@ post '/login' do
   else
    erb :login
  end
-end
-
 
 run! if app_file == $0
+ end
 end
