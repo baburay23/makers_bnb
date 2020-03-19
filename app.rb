@@ -53,6 +53,13 @@ get '/list_space' do
   erb :list_space
 end
 
+post '/list_space' do
+  @first_name = params[:first_name]
+  @last_name = params[:last_name]
+  @description = params[:description]
+  @price_per_night = params[:price_per_night]
+end
+
 get '/reserve' do
   if session[:first_name] != nil
   @properties = Property.display_all
@@ -69,6 +76,7 @@ get '/post' do
     erb :login
 end
 end
+
 
 
 

@@ -3,7 +3,7 @@ feature 'Listing' do
   scenario 'Logged in can book a space' do
     sign_up("first_name", "last_name", "email_address", "password")
     login("email_address","password")
-    click_link 'List a Space'
+    click_link 'Post'
   expect(page.has_css?("input[name= 'first_name']")).to eq true
   expect(page.has_css?("input[name= 'last_name']")).to eq true
   expect(page.has_css?("input[name='description']")).to eq true
@@ -15,6 +15,7 @@ feature 'Listing' do
   scenario 'Has a list space button' do
     sign_up("first_name", "last_name", "email_address", "password")
     login("email_address","password")
-    expect(page).to have_content 'List a Space'
+    click_link 'Post'
+    expect(page).to have_button 'List Space'
   end
 end

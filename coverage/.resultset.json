@@ -11,7 +11,6 @@
           1,
           1,
           null,
-          null,
           null
         ]
       },
@@ -31,6 +30,7 @@
           1,
           null,
           null,
+          1,
           1,
           1,
           1,
@@ -122,6 +122,26 @@
           null
         ]
       },
+      "/Users/hodan/projects/makers_bnb/spec/reservations_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/hodan/projects/makers_bnb/lib/reservations.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/hodan/projects/makers_bnb/spec/user_spec.rb": {
         "lines": [
           1,
@@ -155,6 +175,6 @@
         ]
       }
     },
-    "timestamp": 1584548412
+    "timestamp": 1584613159
   }
 }

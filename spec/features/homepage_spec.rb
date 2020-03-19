@@ -2,9 +2,8 @@ feature 'Homepage' do
 
   scenario 'Can list all properties' do
       visit '/home'
-    expect(page).to have_content "property_1"
-    expect(page).to have_content "seaside_view"
-    expect(page).to have_content 75
+    expect(page).to have_link 'Home'
+    expect(page).to have_link 'Requests'
+    expect(page).to have_link 'Login'
   end
-
 end
