@@ -16,6 +16,7 @@
       },
       "/Users/hodan/projects/makers_bnb/spec/features/list_spec.rb": {
         "lines": [
+          null,
           1,
           null,
           1,
@@ -30,6 +31,14 @@
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -68,20 +77,28 @@
       "/Users/hodan/projects/makers_bnb/spec/test_helper.rb": {
         "lines": [
           1,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
           null,
           null,
           1,
-          5,
-          5,
-          5,
-          5,
+          6,
+          6,
+          6,
+          6,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null
         ]
       },
@@ -132,12 +149,9 @@
           1,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/hodan/projects/makers_bnb/lib/reservations.rb": {
-        "lines": [
+          null,
           1,
+          0,
           null,
           null
         ]
@@ -175,6 +189,6 @@
         ]
       }
     },
-    "timestamp": 1584613159
+    "timestamp": 1584619134
   }
 }

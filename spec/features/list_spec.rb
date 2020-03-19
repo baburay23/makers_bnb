@@ -1,3 +1,4 @@
+
 feature 'Listing' do
 
   scenario 'Logged in can book a space' do
@@ -17,5 +18,13 @@ feature 'Listing' do
     login("email_address","password")
     click_link 'Post'
     expect(page).to have_button 'List Space'
+  end
+
+  scenario 'can add a new space' do
+    sign_up("first_name", "last_name", "email_address", "password")
+    login("email_address","password")
+    click_link 'Post'
+    list_new_space
+    expect(page).to have_xpath '/home'
   end
 end

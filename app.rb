@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './lib/property_listing'
 require './lib/user'
+require './lib/reservations'
 require 'pg'
 
 
@@ -43,6 +44,7 @@ post '/login' do
   if @result.class != String
     session[:first_name] = @result.first_name
     session[:last_name] = @result.last_name
+    session[:id] = @result.id
     redirect '/home'
   else
    erb :login
@@ -58,6 +60,9 @@ post '/list_space' do
   @last_name = params[:last_name]
   @description = params[:description]
   @price_per_night = params[:price_per_night]
+  @id = session[:id]
+  redirect '/requests'
+  Reservation.add(id: @id,description: @description,price_per_night: @price_per_night)
 end
 
 get '/reserve' do

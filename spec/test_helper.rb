@@ -14,3 +14,11 @@ def login (email_address, password)
   fill_in('password', with: password)
   click_button('log in')
 end
+
+def list_new_space
+  fill_in('first_name', with: "hodan")
+  fill_in('last_name', with: "last_name")
+  fill_in('description', with: "need a holiday")
+  fill_in('price_per_night', with: "400")
+  click_button('List Space')
+end
