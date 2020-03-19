@@ -11,12 +11,11 @@ class Fya_hrbnb < Sinatra::Base
     erb :test
   end
 
-  get '/notices'do
-    erb :notices
+  get '/requests'do
+    erb :requests
   end
 
   get '/home' do
-    @properties = Property.display_all
     @first_name = session[:first_name]
     @last_name = session[:last_name]
     erb :index
@@ -52,6 +51,23 @@ end
 
 get '/list_space' do
   erb :list_space
+end
+
+get '/reserve' do
+  if session[:first_name] != nil
+  @properties = Property.display_all
+  erb :reserve
+else
+  erb :login
+end
+end
+
+get '/post' do
+  if session[:first_name] != nil
+    erb :list_space
+  else
+    erb :login
+end
 end
 
 

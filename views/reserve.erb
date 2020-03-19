@@ -1,0 +1,10 @@
+<div>
+<ul>
+  <%@properties.each do |property| %>
+    <li><%= property.pl_name %>
+      <%= property.pl_description %>
+      £<%= property.pl_price_night %>
+    </li>
+  <% end %>
+</ul>
+</div>

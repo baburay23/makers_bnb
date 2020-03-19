@@ -97,7 +97,7 @@
 
 <ul class="main_menu_design">
 	<a href="/home"><li class="individual_menu_items">Home</li></a>
-	<a href="/notices"><li class="individual_menu_items">Notifications</li></a>
+	<a href="/requests"><li class="individual_menu_items">Requests</li></a>
 	<li class="individual_menu_items">Properties
 	<!-- here we're going to next a list inside of a list. this nested list will be the dropdown menu. make sure the nested list is inside the <li> tags -->
 	 <ul class="dropdown_design">
@@ -109,16 +109,3 @@
 	<a href="/login"><li class="individual_menu_items">Login</li></a>
 </ul>
 </body>
-<div>
-  <% if @first_name != nil %>
-  <a href="/list_space">List a Space</a>
-  <% end %>
-<ul>
-  <%@properties.each do |property| %>
-    <li><%= property.pl_name %>
-      <%= property.pl_description %>
-      £<%= property.pl_price_night %>
-    </li>
-  <% end %>
-</ul>
-</div>
