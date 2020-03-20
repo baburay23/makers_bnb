@@ -16,7 +16,7 @@ class Fya_hrbnb < Sinatra::Base
 
   post '/reserve' do
   Reserve.request(check_in_date: params[:check_in_date], check_out_date: params[:check_out_date], r_duration: params[:r_duration])
-  erb :reserve
+  erb :requests
   end
 
   get '/requests'do
