@@ -1,7 +1,4 @@
 # Makers_bnb
-
-## User stories
-# Makers_bnb
 ## User stories
 - ```User Story 1: To be able to register for a Fya_hrbnb account```
 - ```User Story 2: User can log into account```
