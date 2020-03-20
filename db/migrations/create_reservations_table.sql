@@ -10,16 +10,28 @@ CREATE TABLE reservations (
 	 description VARCHAR(150) );
 
 
+	 CREATE TABLE reservations(
+	 id SERIAL PRIMARY KEY,
+	 owner_id numeric,
+	 --requester_id numeric,
+	 r_status VARCHAR(60),
+	 description VARCHAR(100),
+	 check_in_date DATE NOT NULL DEFAULT CURRENT_DATE,
+	 check_out_date DATE NOT NULL DEFAULT CURRENT_DATE,
+	 -- r_duration numeric NOT NULL,
+	 --t_price numeric CHECK(t_price > 0) NOT NULL
+	 );
 
 
-CREATE TABLE reservations(
-id SERIAL PRIMARY KEY,
-owner_id INT,
-requester_id INT,
-r_status VARCHAR(60),
-description VARCHAR(100),
-check_in_date DATE,
-check_out_date DATE,
-r_duration INT,
-t_price INT
-);
+
+-- CREATE TABLE reservations(
+-- id SERIAL PRIMARY KEY,
+-- owner_id INT,
+-- requester_id INT,
+-- r_status VARCHAR(60),
+-- description VARCHAR(100),
+-- check_in_date DATE,
+-- check_out_date DATE,
+-- r_duration INT,
+-- t_price INT
+-- );
