@@ -21,3 +21,11 @@ def show_all
     expect(page).to have_content "seaside_view"
     expect(page).to have_content 75
 end
+
+def list_new_space
+  fill_in('first_name', with: "hodan")
+  fill_in('last_name', with: "last_name")
+  fill_in('description', with: "need a holiday")
+  fill_in('total_price', with: "400")
+  click_button('List Space')
+end
