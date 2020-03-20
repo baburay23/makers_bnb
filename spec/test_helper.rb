@@ -12,7 +12,7 @@ def login (email_address, password)
   visit('/login')
   fill_in('email_address', with: email_address)
   fill_in('password', with: password)
-  click_button('log in')
+  click_button('login')
 end
 
 def show_all

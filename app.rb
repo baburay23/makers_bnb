@@ -54,7 +54,6 @@ post '/login' do
   else
    erb :login
  end
-
-run! if app_file == $0
- end
 end
+run! if app_file == $0
+end 
